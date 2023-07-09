@@ -1,18 +1,16 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hello</title>
+    <title>Человек</title>
 </head>
 <body>
-<p>Hello!</p>
-<a href="/first/goodbye">Say goodbye</a> or <a href="/exit">exit</a>
-or <a href="/first/hello?name=Tom&surname=Jonas">request with parameteres</a>
 
-<p th:text="${message}" />
+<p th:text="${person.getName()}">VALUE</p>
+<p th:text="${person.getId()}">VALUE</p>
 
 </body>
 </html>
